@@ -1,3 +1,5 @@
-FROM centos:7
+FROM centos:centos7
 RUN yum repolist 
-RUN yum install -y tree
+RUN mkdir abc
+RUN touch abc/a.txt
+#RUN yum install -y tree
